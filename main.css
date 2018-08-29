@@ -15,7 +15,7 @@ html,body,section {
   top: -10px;
   bottom: -10px;
   right: -10px;
-  background-image: url(/imgs/default.jpg);
+  background-image: url(./imgs/default.jpg);
   background-size: cover;
   position: center center no-repeat;
   filter: blur(4px);
@@ -46,7 +46,7 @@ main .aside {
 main .aside figure {
   width: 46vh;
   height: 46vh;
-  background: url('/imgs/default.jpg') no-repeat center;
+  background: url('./imgs/default.jpg') no-repeat center;
   background-size: cover;
 }
 main .aside .actions {
