@@ -5,7 +5,29 @@ html,body,section {
 
 .layout {
   margin: 0 auto;
-  width: 800px;
+  width: 600px;
+}
+
+
+@media (min-width: 700px) {
+  .layout {
+    width: 600px;
+  }
+}
+@media (min-width: 900px) {
+  .layout {
+    width: 800px;
+  }
+}
+@media (min-width: 1000px) {
+  .layout {
+    width: 900px;
+  }
+}
+@media (min-width: 1200px) {
+  .layout {
+    width: 1100px;
+  }
 }
 
 .bg {
