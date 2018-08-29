@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="referrer" content="never">     <!-- 为了能够使用音乐api -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_811684_rrs8gwsaoj.css">
+  <link rel="shortcut icon" href="/imgs/ico.png" type="image/x-icon">
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+  <title>FM WebMusic 音乐站</title>
+</head>
+<body>
+  <!-- 主页面 -->
+  <section id="page-music">
+    <main class="layout">
+      <div class="aside">
+        <figure></figure>
+        <ul class="actions">
+          <li><span class="btn-heart iconfont icon-heart"></span></li>
+          <li><span class="btn-play iconfont icon-play"></span></li>
+          <li><span class="btn-next iconfont icon-next"></span></li>
+        </ul>
+      </div>
+      <div class="detail">
+        <span class="tag">Tag</span>
+        <h1>Song Name</h1>
+        <ul class="icons">
+          <li><span class="iconfont icon-earphone">2013</span></li>
+          <li><span class="iconfont icon-heart">5</span></li>
+          <li><span class="iconfont icon-like">3</span></li>
+        </ul>
+        <div class="area-bar">
+          <div class="bar">
+            <div class="bar-progress"></div>
+          </div>
+          <div class="current-time">0:00</div>
+        </div>
+        <div class="author">Singer</div>
+        <div class="lyric">
+          <p>hello world</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="layout">
+        <!-- icon-left由于默认在最左，无法想左点击，所以默认有disabled 当进行一次右移之后 移除disabled -->
+        <span class="iconfont icon-left disabled"></span>
+        <span class="iconfont icon-right"></span>
+        <div class="box">
+          <ul>
+            <!-- <li>
+              <div class="cover" style="background-image: url('/imgs/1.jpg')">
+              </div>
+              <h3>专辑名</h3>
+            </li>
+            <li>
+              <div class="cover" style="background-image: url('/imgs/2.jpg')">
+              </div>
+              <h3>专辑名</h3>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <!-- 鼠标停留超时后出现的页面 -->
+  <section id="page-cover"></section>
+
+  <!-- 背景毛玻璃 -->
+  <div class="bg"></div>
+  <script src="index.js"></script>
+</body>
+</html>
