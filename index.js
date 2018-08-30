@@ -206,7 +206,11 @@ var Main = {
         }
       })
       _this.lyricObj = lyricObj
-    })
+    }).fail(function(){
+      _this.lyricObj = {}   //修复歌词获取不到控制台报错的bug
+      console.log('该歌曲没有歌词')
+      _this.$container.find('.lyric p').text('该歌曲暂无歌词')    
+    }) 
   },
 
   //操作 Main 中与音乐相关的 DOM
