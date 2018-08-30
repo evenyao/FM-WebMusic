@@ -88,7 +88,7 @@ var Footer = {
   render(){
     var _this = this
     $.getJSON('https://jirenguapi.applinzi.com/fm/getChannels.php').done(function(ret){
-      console.log(ret)
+      //console.log(ret)
       _this.renderFooter(ret.channels)
     }).fail(function(){
       console.log('error')
@@ -97,7 +97,7 @@ var Footer = {
 
   // DOM操作
   renderFooter: function(channels){
-    console.log(channels)
+    //console.log(channels)
     var html = ''
     channels.forEach(function(channel){
       html += '<li data-channel-id='+channel.channel_id+' data-channel-name='+channel.name+'>'
