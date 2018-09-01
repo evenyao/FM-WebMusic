@@ -77,7 +77,7 @@ footer .icon-right {
 ```
 
 ## 逻辑要点
-### 面向对象
+### 模块方式
 #### 使用自定义事件中心
 使用自定义事件中心，让 Main 与 Footer 不直接交互，而是通过事件中心进行间接交互，实现了解耦。
 ```JavaScript
@@ -90,11 +90,11 @@ var EventCenter = {
   }
 }
 ```
-### 组件分离
-#### Footer组件
+### 模块分离
+#### Footer模块
 `init` 初始化后通过 `bind` 监听事件，通过 `render` 获取`JSON`数据。然后进行相应的 `DOM`操作、完成相应的逻辑。
 
-#### Main组件
+#### Main模块
 `init` 初始化后通过 `bind`监听事件，并通过 `EventCenter`自定义事件中心与 `footer` 中获取到的数据进行交互。改变相应的 `DOM`、完成相应的逻辑。
 
 ## 功能要点
